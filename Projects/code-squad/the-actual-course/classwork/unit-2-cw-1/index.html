@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba table</title>
+    <style>table, td, th {
+        border: 1px solid black;
+        }</style>
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <h1>Table with Boba Orders</h1>
+    <table>
+        <thead>
+            <th>Drink Name</th>
+            <th>Size</th>
+            <th>Ice Level</th>
+            <th>Sugar Level</th>
+            <th>Topping</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Oolong Milk Tea</td>
+                <td>M</td>
+                <td>50%</td>
+                <td>25%</td>
+                <td>Boba Original</td>
+            </tr>
+            <tr>
+                <td>Jasmine</td>
+                <td>L</td>
+                <td>25%</td>
+                <td>25%</td>
+                <td>Lychee Jelly</td>
+            </tr>
+            <tr>
+                <td>Mango Smoothie</td>
+                <td>L</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>Mango Star Jelly</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Your order</h2>
+    <p id="drink-name"></p>
+    <p id="size"></p>
+    <p id="ice-level"></p>
+    <p id="sugar-level"></p>
+    <p id="topping"></p>
+</body>
