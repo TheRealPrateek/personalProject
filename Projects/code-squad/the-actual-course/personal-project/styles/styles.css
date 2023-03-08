@@ -246,7 +246,81 @@ body {
 
 /* media queries */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 319px) {
+    .site-logo {
+        width: 12em;
+        height: auto;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1.6rem;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .hburg-menu {
+        display: block;
+        font-size: 1.3em;
+    }
+
+    .hburg-menu:hover {
+        font-size: 1.6em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 3%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .menuItem {
+        display: block;
+    }
+
+    .scroll-up {
+        padding: 4%;
+    }
+
+    .fa-xmark {
+        font-size: 2.5em;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .container {
+        font-size: 1.1rem;
+    }
+
+    .video-lesson {
+        width: 10em;
+        height: 6em;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
     .site-logo {
         width: 15em;
@@ -305,11 +379,6 @@ body {
 
     .container {
         font-size: 1.1rem;
-    }
-
-    .video-lesson {
-        width: 100%;
-        height: auto;
     }
 
     .video-lesson {
