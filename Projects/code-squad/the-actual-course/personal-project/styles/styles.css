@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-.nav ul {
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,31 +73,40 @@ h1, h2, h3, h4 {
 }
 
 .tab-drop-down-menu {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     position: fixed;
-    width: 100%;
-    transform: translateY(-120%);
-    transition: transform 0.3s;
+    width: 40%;
+    height: fit-content;
+    transform: translateY(-200%);
+    transition: transform 0.2s;
     top: 0;
     left: 55%;
     right: 0;
-    bottom: 80%;
+    bottom: 85%;
     z-index: 99;
     background: black;
     color: white;
     list-style: none;
-    padding-top: 3%;
+    padding-top: 2.5%;
 }
 
-.tabMenuItem {
+.tabMenuItem a {
     font-family: 'Shrikhand', cursive;
     font-size: 1rem;
     color: white;
     text-decoration: none;
+    margin-right: 10%;
 }
 
-.tabMenuItem:hover {
+.tabMenuItem a:hover {
+    font-size: 1.1rem;
     cursor: pointer;
+}
+
+.tabMenuItem a:active {
+    color: red;
 }
 
 .showTabMenu {
@@ -160,18 +169,18 @@ h1, h2, h3, h4 {
 
 /* header and footer stylings */
 
-.nav ul li a, .footer-link, menuitem {
+.nav-bar-item, .footer-link, menuItem {
     font-family: 'Shrikhand', cursive;
     text-decoration: none;
     color: white;
 }
 
-.nav ul li a:hover, .footer-link:hover {
+.nav-bar-item:hover, .footer-link:hover {
     cursor: pointer;
     font-size: 1.15em;
 }
 
-.nav ul li a:active, .footer-link:active, .menuItem:active {
+.nav-bar-item:active, .footer-link:active, .menuItem:active {
     color: red;
 }
 
@@ -246,7 +255,7 @@ body {
 
 /* media queries */
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 320px) {
     .site-logo {
         width: 12em;
         height: auto;
@@ -320,7 +329,7 @@ body {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
 
     .site-logo {
         width: 15em;
