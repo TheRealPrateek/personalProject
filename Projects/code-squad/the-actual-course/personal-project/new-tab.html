@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload your own tab</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script defer src="scripts/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32a0eb039b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="home.html">
+                <img class="site-logo" alt="guit-archive" src="images/guit-archive logo white.png">
+            </a>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="log-in.html">Login</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a onclick="tabDropDown()">Browse Tabs</a>
+                </li>
+            </ul>
+            <ul class="tab-drop-down-menu">
+                <li class="tabMenuItem">
+                    <a href="song-index.html">Browse Tabs by Song Name</a>
+                </li>
+                <li class="tabMenuItem">
+                    <a href="artist-index.html">Browse Tabs by Artist</a>
+                </li>
+                <li class="tabMenuItem" onclick="tabDropDown()">
+                    <a>Back</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hburg-menu" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    <ul class="menu">
+        <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+        <li>
+            <a class="menuItem" href="home.html">Home</a>
+        </li>
+        <li>
+            <a class="menuItem" href="log-in.html">Login</a>
+        </li>
+        <li>
+            <a class="menuItem" href="about.html">About</a>
+        </li>
+        <li>
+            <a class="menuItem" href="song-index.html">Browse Tabs by Song Name</a>
+        </li>
+        <li>
+            <a class="menuItem" href="artist-index.html">Browse Tabs by Artist</a>
+        </li>
+    </ul>
+    <div class="container">
+        <h1>Upload your own tab!</h1>
+        <p>
+            Make sure that your tab/chart is clear and easy to read.
+        </p>
+        <input class="file=upload" type="file">
+        <p>
+            <label for="videoLesson">Know a video that teaches how to play this song? Link it here:</label>
+            <input id="videoLesson" type="url">
+            <input type="submit">
+        </p>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3>LINKS</h3>
+                <ul>
+                    <li>
+                        <a class="footer-link" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="log-in.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="head-foot-text footer-text">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <div>
+                        <a class="footer-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"><span class="fa-brands fa-facebook fa-xl"></span></a>
+                    </div>
+                    <div>
+                        <a class="footer-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"><span class="fa-brands fa-instagram fa-xl"></span></a>
+                    </div>
+                    <div>
+                        <a class="footer-link" href="https://twitter.com" target="_blank" rel="noopener no referrer"><span class="fa-brands fa-twitter fa-xl"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dev-info">
+                <h3>About the Developer:</h3>
+                <ul>
+                    <li>
+                        <a class="dev-info-item">Prateek Poddar</a>
+                    </li>
+                    <li>
+                        <a class="dev-info-item" href="mailto:poddarp312@gmail.com">Email Address: poddarp312@gmail.com</a>
+                    </li>
+                    <li>
+                        <a class="dev-info-item" href="https://www.linkedin.com/in/prateek-poddar-a51566155/" target="_blank">Visit me on LinkedIn.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="head-foot-text footer-text">
+                <h3>A PRODUCT OF</h3>    
+            <a href="https://codesquad.org" target="_blank" rel="noopener noreferrer"><img class="foot-img" alt="CodeSquad.org" src="images/CodeSquad-logo-b.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

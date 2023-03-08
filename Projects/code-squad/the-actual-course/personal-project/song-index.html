@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Index</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script defer src="scripts/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32a0eb039b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="home.html">
+                <img class="site-logo" alt="guit-archive" src="images/guit-archive logo white.png">
+            </a>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="log-in.html">Login</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a onclick="tabDropDown()">Browse Tabs</a>
+                </li>
+            </ul>
+            <ul class="tab-drop-down-menu">
+                <li class="tabMenuItem">
+                    <a href="song-index.html">Browse Tabs by Song Name</a>
+                </li>
+                <li class="tabMenuItem">
+                    <a href="artist-index.html">Browse Tabs by Artist</a>
+                </li>
+                <li class="tabMenuItem" onclick="tabDropDown()">
+                    <a>Back</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hburg-menu" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    <ul class="menu">
+        <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+        <li>
+            <a class="menuItem" href="home.html">Home</a>
+        </li>
+        <li>
+            <a class="menuItem" href="log-in.html">Login</a>
+        </li>
+        <li>
+            <a class="menuItem" href="about.html">About</a>
+        </li>
+        <li>
+            <a class="menuItem" href="song-index.html">Browse Tabs by Song Name</a>
+        </li>
+        <li>
+            <a class="menuItem" href="artist-index.html">Browse Tabs by Artist</a>
+        </li>
+    </ul>
+    <div class="container">
+        <h1>Browse tabs by song name</h1>
+        <a href="artist-index.html">Browse tabs by artist name</a>
+        <h1>A - C</h1>
+        <ul>
+            <li>All Along the Watchtower</li>
+            <li>Alone In the Dark</li>
+            <li>Blue Telescope</li>
+            <li>Buffalo River Home</li>
+            <li>Crossing Muddy Waters</li>
+        </ul>
+    <h1>D - F</h1>
+        <ul>
+            <li>Drive South</li>
+            <li>Feels Like Rain</li>
+        </ul>
+    <h1>G - I</h1>
+        <ul>
+            <li>Georgia Rae</li>
+            <li>Have A Little Faith In Me</li>
+            <li>Icy Blue Heart</li>
+        </ul>
+    <h1>J - L</h1>
+        <ul>
+            <li>Knockin' On Heaven's Door</li>
+            <li>Lipstick Sunset</li>
+            <li>Loving A Hurricane</li>
+        </ul>
+    <h1>M - O</h1>
+        <ul>
+            <li>Memphis in the Meantime</li>
+            <li>Old Habits</li>
+        </ul>
+    <h1>P - S</h1>
+        <ul>
+            <li>Paper Thin</li>
+            <li>Perfectly Good Guitar</li>
+            <li>Ride Along</li>
+            <li>Sad But True</li>
+            <li><a href="sample-tab.html">Slow Turning</a></li>
+            <li>Stood Up</li>
+        </ul>
+    <h1>T - V</h1>
+        <ul>
+            <li>Tennesee Plates</li>
+            <li>Thank You Girl</li>
+            <li>Thing Called Love</li>
+            <li>Trudy and Dave</li>
+        </ul>
+    <h1>W - Z</h1>
+        <ul>
+            <li>When You Hold Me Tight</li>
+            <li>Wrote It Down and Burned It</li>
+            <li>Your Dad Did</li>
+        </ul>
+    <br>
+    <a href="artist-index.html">Browse tabs by artist name</a>
+    </div>
+    <div class="scroll-up-container">
+        <div class="scroll-up" onclick="scrollUp()">
+            Back to top
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h3>LINKS</h3>
+                <ul>
+                    <li>
+                        <a class="footer-link" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="log-in.html">Login</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="head-foot-text footer-text">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <div>
+                        <a class="footer-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"><span class="fa-brands fa-facebook fa-xl"></span></a>
+                    </div>
+                    <div>
+                        <a class="footer-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"><span class="fa-brands fa-instagram fa-xl"></span></a>
+                    </div>
+                    <div>
+                        <a class="footer-link" href="https://twitter.com" target="_blank" rel="noopener no referrer"><span class="fa-brands fa-twitter fa-xl"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dev-info">
+                <h3>About the Developer:</h3>
+                <ul>
+                    <li>
+                        <a class="dev-info-item">Prateek Poddar</a>
+                    </li>
+                    <li>
+                        <a class="dev-info-item" href="mailto:poddarp312@gmail.com">Email Address: poddarp312@gmail.com</a>
+                    </li>
+                    <li>
+                        <a class="dev-info-item" href="https://www.linkedin.com/in/prateek-poddar-a51566155/" target="_blank">Visit me on LinkedIn.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="head-foot-text footer-text">
+                <h3>A PRODUCT OF</h3>    
+            <a href="https://codesquad.org" target="_blank" rel="noopener noreferrer"><img class="foot-img" alt="CodeSquad.org" src="images/CodeSquad-logo-b.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
